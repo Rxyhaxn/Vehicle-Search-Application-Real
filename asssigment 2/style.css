@@ -1,0 +1,247 @@
+h1 {
+    text-align: center;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #862e2e;
+    color: white;
+    text-align: center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+
+}
+
+header h1 {
+    margin: 0;
+    font-size: 42px;
+    font-weight: 850;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+main section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 1000px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    align-items: flex-end;
+}
+
+form {
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #862e2e;
+    border-right: 4px solid #862e2e;
+}
+
+form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+label {
+    font-weight: 500;
+}
+
+input,
+select {
+    padding: 11px 12px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    color: #333;
+    min-width: 180px;
+}
+
+input:hover,
+select:hover {
+    border-color: #862e2e;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #862e2e;
+    outline-offset: 2px;
+    background-color: white;
+}
+
+footer {
+    background-color: #862e2e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    list-style: none;
+}
+
+li span {
+    display: block;
+}
+
+.car-name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+section h2 {
+    color: #862e2e;
+    margin-top: 0;
+}
+
+.intro {
+    background: linear-gradient(to right, #862e2e, #333);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.intro h2 {
+    margin: 0 0 10px 0;
+    font-size: 36px;
+    color: white;
+}
+
+.intro p {
+    margin: 0;
+    font-size: 18px;
+}
+
+button {
+    background-color: #862e2e;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #6e2323;
+}
+
+#topButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+#results {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 0;
+}
+
+.description {
+    display: none;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+#results img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#results li {
+    transition: transform 0.2s, box-shadow 0.2s;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+}
+
+#results li:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#results h3 {
+    margin: 4px 0;
+    font-size: 18px;
+    color: #555;
+}
+
+#results p {
+    margin: 3px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+
+
+@media (max-width: 768px) {
+
+    #results {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-bar {
+        margin-top: 10px;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    input,
+    select {
+        width: 100%;
+    }
+}

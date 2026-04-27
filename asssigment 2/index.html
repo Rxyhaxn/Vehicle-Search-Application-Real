@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ray Vehicle Search Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>RAY CAR DEALERSHIP</h1>
+    </header>
+
+    <main>
+
+        <section class="intro">
+            <h2>Find Your Next Vehicle</h2>
+            <p>Browse a wide range of cars and use the filters below to find the best car suited for you</p>
+        </section>
+
+        <section>
+            <h2>Search Vehicles</h2>
+            <form id="searchForm">
+                <label for="searchInput">Search by Make or Model:</label>
+                <input type="text" id="searchInput" placeholder="e.g. Toyota">
+
+                <label for="fuelFilter">Choose which fuel type:</label>
+                <select id="fuelFilter">
+                    <option value="">All Fuel Types</option>
+                    <option value="Petrol">Petrol</option>
+                    <option value="Diesel">Diesel</option>
+                    <option value="Electric">Electric</option>
+                </select>
+
+                <label for="yearFilter">Year made:</label>
+                <select id="yearFilter">
+                    <option value="">All Years</option>
+                    <option value="2026">2026</option>
+                    <option value="2025">2025</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                </select>
+
+                <label for="colourFilter">Choose Colour:</label>
+                <select id="colourFilter">
+                    <option value="">All Colours</option>
+                    <option value="Black">Black</option>
+                    <option value="White">White</option>
+                    <option value="Red">Red</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Grey">Grey</option>
+                    <option value="Orange">Orange</option>
+                    <option value="Silver">Silver</option>
+                    <option value="Yellow">Yellow</option>
+                    <option value="Green">Green</option>
+                </select>
+            </form>
+        </section>
+
+        <section>
+            <h2>Results</h2>
+            <ul id="results"></ul>
+        </section>
+
+        <button type="button" id="resetButton">Refresh Filters</button>
+
+        <button id="topButton">Scroll to Top</button>
+
+    </main>
+
+    <footer>
+        <p>Ray Car Dealership</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>
